@@ -274,7 +274,7 @@ export class AppComponent implements AfterViewInit {
               font,
               size: debugSetting.lyrics.size,
               depth: 0.2,
-              curveSegments: 15,
+              curveSegments: 3,
               bevelEnabled: true,
               bevelThickness: 0.01,
               bevelSize: 0.02,
