@@ -206,16 +206,12 @@ export class AppComponent implements AfterViewInit {
 
     // Audio
     alert('Interact!');
-    const audio = new Audio(
-      'http://localhost:4200/assets/music/ma-meilleure-ennemie.mp3',
-    );
+    const audio = new Audio('assets/music/ma-meilleure-ennemie.mp3');
     setTimeout(async () => {
       audio.play();
 
       let currentIndex = 0;
-      const file = await fetch(
-        'http://localhost:4200/assets/music/ma-meilleure-ennemie.lrc',
-      );
+      const file = await fetch('assets/music/ma-meilleure-ennemie.lrc');
       const text = await file.text();
       const timeStampedLyrics = text.split('\n').map((line) => ({
         time: line
